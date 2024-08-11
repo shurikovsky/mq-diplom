@@ -1,0 +1,36 @@
+.header {
+    background-image: url(../images/banner-bg-tablet.jpg);
+    
+    padding: 27px 0px 96px;
+}
+
+.menu {
+   background-image: url(../svg/search.svg); 
+   width: 15px;
+   height: 15px;
+   background-size: 15px;
+   background-repeat: no-repeat;
+}
+
+.list {
+  display: none;  
+}
+
+.menu:focus+ .list {
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks-trends {
+    flex-wrap: wrap;
+}
+
+.block-trend {
+  width: calc((100vw - 5px) / 2);
+  height: calc(((100vw - 5px) / 2) * 0.77);
+}
+
+.block-news {
+  flex-direction: column;
+}
+
