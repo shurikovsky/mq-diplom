@@ -1,6 +1,6 @@
 @font-face {
   font-family: OpenSans;
-  src: url(..fonts/OpenSans-Regular.woff);
+  src: url(../fonts/OpenSans-Regular.woff);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -131,8 +131,8 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: calc((100vw - 15px) / 4);
-  height: calc(((100vw - 15px) / 4) * 0.77);
+  width: calc((100% - 15px) / 4);
+  min-height: 316px;
   background-color: rgb(248, 207, 207);
   align-content: flex-end;
   background-repeat: no-repeat;
@@ -174,13 +174,13 @@ body {
   position: relative;
   border: 3px solid #b59f5b;
   
-  padding: 37px 2px 2px 0px;
-  margin: 0px 15px 13px 22px;
+  padding: 26px 17px 6px 20px;
+  margin: 132px 32px 15px 32px;
   z-index: 2;
 }
 
 
-.colomn{
+.colomn {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -208,7 +208,8 @@ body {
 
 .block-description {
   
-  padding-left: 30px;
+  padding-left: 21px;
+  padding-right: 14px;
 }
 
 .top-list {
@@ -241,7 +242,6 @@ body {
 }
 
 .news-headline {
-  margin: 5px 40px 30px 0px;
   font-size: 20px;
   line-height: 24px;
 }
@@ -551,7 +551,10 @@ color: #b59f5b;
   position: relative;
   border: 3px solid #b59f5b;
   margin: -34px -25px 0 -25px;
-  padding: 45px 0px 28px 18px;
+  padding: 35px 18px 28px 18px;
+  width: 309px;
+  font-weight: 700;
+  font-family: OpenSans, Arial, sans-serif;
   flex-grow: 1;
 }
 
@@ -562,7 +565,7 @@ color: #b59f5b;
   font-weight: 400;
   font-family: "OpenSans";
   letter-spacing: 1.2px;
-  margin: -7px 27px 20px 1px;
+  margin: -7px 0px 20px 1px;
 }
 
 .link-text-goods {
@@ -599,13 +602,16 @@ color: #b59f5b;
 
 .button {
   font-size: 14px;
-  line-height: 40px;
+  line-height: 45px;
   color: #ffffff;
   width: 140px;
   height: 48px;
   background-color: #b59f5b;
   border: none;
-  margin-right: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "OpenSans"; 
+  text-align: center;
 }
 
 .button:hover {
@@ -687,11 +693,8 @@ color: #b59f5b;
 
 .form-popup {
   position: relative;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   width: 390px;
-  height: 589px;
   background-color: #ffffff;
   margin: auto auto;
   padding: 46px 31px;
@@ -701,8 +704,6 @@ color: #b59f5b;
 }
 
 .questions {
-  display: flex;
-  flex-direction: column;
   font-size: 13px;
   color: #000000;
   font-weight: 400;
@@ -726,6 +727,7 @@ color: #b59f5b;
   border: none;
   padding: 14px 20px;
   margin-bottom: 23px;
+  width: 100%;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -765,7 +767,7 @@ color: #b59f5b;
 }
 
 .answer-text {
-  width: 330px;
+  width: 100%;
   height: 131px;
   background-color: #f4f7f6;
   border: none;
@@ -774,6 +776,7 @@ color: #b59f5b;
 
 .button-form {
   height: 55px;
+  width: 100%;
   background-color: #b59f5b;
   color:#ffffff;
   font-size: 15px;
